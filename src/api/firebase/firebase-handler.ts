@@ -20,9 +20,9 @@ export class FirebaseHandler {
 
     this.firestore = FirebaseApi.firestore();
 
-    this.firestore.enablePersistence().catch((err) => {
+    /**this.firestore.enablePersistence().catch((err) => {
       console.error("error enabling data persistence ", err);
-    });
+    });*/
 
     this.bookCollection = new BookCollection(this);
   }
